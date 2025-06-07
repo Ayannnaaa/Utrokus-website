@@ -92,7 +92,7 @@ a {
 .main-banner {
   text-align: center;
   padding: 14.5rem 1rem;
-  background: url('image/главн2.jpg') center/cover no-repeat;
+  background: url('images/glavn2.jpg') center/cover no-repeat;
   color: var(--color-bigtitle);
   font-size: 1.5em;
 }
@@ -125,7 +125,7 @@ a {
   width: 100%;                
   max-width: none;            
   border-radius: 0; 
-  background: url('image/советы.jpg') no-repeat center center;
+  background: url('images/sovet.jpg') no-repeat center center;
   background-size: cover;
   color: white;
   overflow: hidden;
@@ -155,7 +155,7 @@ a {
   position: relative;
   color: rgb(255, 255, 255);
   border-radius: 5px;
-  background: url('image/o-site.jpg') no-repeat center center;
+  background: url('images/o-site.jpg') no-repeat center center;
   background-size: cover;
   box-shadow: 0 0 20px rgba(0,0,0,0.3);
   z-index: 1;
@@ -546,23 +546,23 @@ textarea:focus,
 }
 
 .recipe1 {
-  background-image: url('image/гре1.png');
+  background-image: url('images/gre1.png');
 }
 
 .recipe2 {
-  background-image: url('image/омл1.png');
+  background-image: url('images/oml1.png');
 }
 
 .recipe3 {
-  background-image: url('image/смуз1.png');
+  background-image: url('images/smyzi1.png');
 }
 
 .recipe4 {
-  background-image: url('image/овс1.png');
+  background-image: url('images/ovs1.png');
 }
 
 .recipe5 {
-  background-image: url('image/тост1.png');
+  background-image: url('images/tost1.png');
 }
 
 .stars {
