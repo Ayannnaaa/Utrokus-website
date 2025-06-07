@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Рецепты – Utrokus</title>
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+  <header class="header">
+    <a href="index.html" class="logo">Utrokus</a>
+    <nav class="nav">
+      <a href="about.html">О сайте</a>
+      <a href="recipes.html">Рецепты</a>
+      <a href="tips.html">Советы</a>
+      <a href="#footer">Контакты</a>
+    </nav>
+  </header>
+
+  <main class="content">
+    <h2>Рецепты</h2>
+    <div class="recipe-grid">
+      <div class="recipe-block">
+        <div class="recipe-card recipe1" onclick="openPopup('popup1')">
+          <h3>Йогурт с мёдом и орехами</h3>
+          <p class="recipe-time">⏱ 5 минут</p>
+        </div>
+        <div class="rating-block">
+          <p class="rating-label">Оцените рецепт:</p>
+          <div class="stars" data-id="1"></div>
+        </div>
+      </div>
+      <div class="recipe-block">
+        <div class="recipe-card recipe2" onclick="openPopup('popup2')">
+          <h3>Омлет с овощами</h3>
+          <p class="recipe-time">⏱ 7 минут</p>
+        </div>
+        <div class="rating-block">
+          <p class="rating-label">Оцените рецепт:</p>
+          <div class="stars" data-id="2"></div>
+        </div>
+      </div>
+      <div class="recipe-block">
+        <div class="recipe-card recipe3" onclick="openPopup('popup3')">
+          <h3>Смузи с ягодами</h3>
+          <p class="recipe-time">⏱ 10 минут</p>
+        </div>
+        <div class="rating-block">
+          <p class="rating-label">Оцените рецепт:</p>
+          <div class="stars" data-id="3"></div>
+        </div>
+      </div>
+      <div class="recipe-block">
+        <div class="recipe-card recipe4" onclick="openPopup('popup4')">
+          <h3>Овсянка с бананом</h3>
+          <p class="recipe-time">⏱ 12 минут</p>
+        </div>
+        <div class="rating-block">
+          <p class="rating-label">Оцените рецепт:</p>
+          <div class="stars" data-id="4"></div>
+        </div>
+      </div>
+      <div class="recipe-block">
+        <div class="recipe-card recipe5" onclick="openPopup('popup5')">
+          <h3>Тост с авокадо</h3>
+          <p class="recipe-time">⏱ 12 минут</p>
+        </div>
+        <div class="rating-block">
+          <p class="rating-label">Оцените рецепт:</p>
+          <div class="stars" data-id="5"></div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- POPUPS -->
+
+  <!-- 1 -->
+  <div class="popup" id="popup1">
+    <div class="popup-content">
+      <span class="close" onclick="closePopup('popup1')">&times;</span>
+      <h3>Греческий йогурт с мёдом и орехами</h3>
+      <div class="recipe-collage">
+        <img src="image/гре1.png" alt="Готовый йогурт" class="final-image">
+
+        <div class="collage-row">
+        <img src="image/гре2.png" alt="Шаг 1"> 
+        <img src="image/гре3.png" alt="Шаг 2">
+        <img src="image/гре4.png" alt="Шаг 3">
+      </div>
+
+      <div class="collage-row">
+        <img src="image/гре5.png" alt="Шаг 4">
+      </div>
+    </div>
+      <div class="nutrition">
+        <p><strong>Калорийность:</strong> 220 ккал</p>
+        <p><strong>Пищевая ценность на 100 г:</strong> Белки – 10 г, Жиры – 7 г, Углеводы – 25 г</p>
+      </div>
+      <p><strong>Ингредиенты:</strong></p>
+      <ul class="ingredient-list">
+        <li>1 стакан греческого йогурта</li>
+        <li>1 столовая ложка мёда</li>
+        <li>1 столовая ложка измельчённых орехов (грецкие, миндаль)</li>
+        <li>Свежие ягоды для украшения (по желанию)</li>
+      </ul>
+
+      <p><strong>Способ приготовления:</strong></p>
+      <ol class="recipe-steps">
+        <li>Поместите греческий йогурт в миску.</li>
+        <li>Полейте йогурт мёдом.</li>
+        <li>Посыпьте измельчёнными орехами.</li>
+        <li>Украсьте свежими ягодами и подавайте.</li>
+      </ol>
+      <a href="https://rutube.ru/video/552739b1c6a4aa20a29763d63e2f7d09/?r=plemwd" target="_blank" class="button">Смотреть видеоурок</a>
+    </div>
+  </div>
+
+  <!-- 2 -->
+  <div class="popup" id="popup2">
+    <div class="popup-content">
+      <span class="close" onclick="closePopup('popup2')">&times;</span>
+      <h3>Омлет с овощами</h3>
+      <div class="recipe-collage">
+        <img src="image/омл1.png" alt="Готовый омлет" class="final-image">
+
+        <div class="collage-row">
+        <img src="image/омл2.png" alt="Шаг 1">
+        <img src="image/омл3.png" alt="Шаг 2">
+        <img src="image/омл4.png" alt="Шаг 3">
+      </div>
+
+      <div class="collage-row">
+        <img src="image/омл5.png" alt="Шаг 4">
+        <img src="image/омл6.png" alt="Шаг 5">
+      </div>
+    </div>
+      <div class="nutrition">
+        <p><strong>Калорийность:</strong> 170 ккал</p>
+        <p><strong>Пищевая ценность на 100 г:</strong> Белки – 11 г, Жиры – 9 г, Углеводы – 6 г</p>
+      </div>
+      <p><strong>Ингредиенты:</strong></p>
+      <ul class="ingredient-list">
+        <li>3 яйца</li>
+        <li>1/4 стакана молока</li>
+        <li>1/2 помидора</li>
+        <li>1/4 болгарского перца</li>
+        <li>1/4 лука</li>
+        <li>Соль и перец по вкусу</li>
+        <li>1 столовая ложка растительного масла</li>
+      </ul>
+
+      <p><strong>Способ приготовления:</strong></p>
+      <ol class="recipe-steps">
+        <li>Взбейте яйца с молоком, посолите и поперчите.</li>
+        <li>Нарежьте помидор, перец и лук.</li>
+        <li>Разогрейте масло на сковороде, добавьте овощи и обжарьте их 2-3 минуты.</li>
+        <li>Влейте яичную смесь и жарьте на среднем огне до готовности, переверните омлет и обжарьте с другой стороны.</li>
+      </ol>
+      <a href="https://rutube.ru/video/ad5b4644d2845ae9b6eec222b0a2f4e0/?r=plemwd" target="_blank" class="button">Смотреть видеоурок</a>
+    </div>
+  </div>
+
+  <!-- 3 -->
+  <div class="popup" id="popup3">
+    <div class="popup-content">
+      <span class="close" onclick="closePopup('popup3')">&times;</span>
+      <h3>Смузи с ягодами</h3>
+      <div class="recipe-collage">
+        <img src="image/смуз1.png" alt="Готовый смузи" class="final-image">
+
+        <div class="collage-row">
+        <img src="image/смуз2.png" alt="Шаг 1"> 
+        <img src="image/смуз3.png" alt="Шаг 2">
+        <img src="image/смуз4.png" alt="Шаг 3">
+      </div>
+    </div>
+      <div class="nutrition">
+        <p><strong>Калорийность:</strong> 180 ккал</p>
+        <p><strong>Пищевая ценность на 100 г:</strong> Белки – 6 г, Жиры – 3 г, Углеводы – 30 г</p>
+      </div>
+      <p><strong>Ингредиенты:</strong></p>
+      <ul class="ingredient-list">
+        <li>1 стакан ягод (клубника, малина, черника)</li>
+        <li>1 стакан йогурта</li>
+        <li>1 столовая ложка меда</li>
+        <li>1/2 стакана льда</li>
+      </ul>
+
+      <p><strong>Способ приготовления:</strong></p>
+      <ol class="recipe-steps">
+        <li>Поместите ягоды, йогурт, мед и лед в блендер.</li>
+        <li>Взбивайте до получения однородной массы.</li>
+        <li>Перелейте в стакан и подавайте сразу.</li>
+      </ol>
+      <a href="https://rutube.ru/video/a6fbcba36b8987bbeca16049e5325624/?r=plemwd" target="_blank" class="button">Смотреть видеоурок</a>
+    </div>
+  </div>
+
+  <!-- 4 -->
+  <div class="popup" id="popup4">
+    <div class="popup-content">
+      <span class="close" onclick="closePopup('popup4')">&times;</span>
+      <h3>Овсянка с бананом</h3>
+      <div class="recipe-collage">
+        <img src="image/овс1.png" alt="Готовая овсянка" class="final-image">
+
+        <div class="collage-row">
+        <img src="image/овс2.png" alt="Шаг 1">
+        <img src="image/овс3.png" alt="Шаг 2">
+        <img src="image/овс4.png" alt="Шаг 3">
+      </div>
+
+      <div class="collage-row">
+        <img src="image/овс5.png" alt="Шаг 4">
+        <img src="image/овс6.png" alt="Шаг 5">
+        <img src="image/овс7.png" alt="Шаг 6">
+      </div>
+    </div>
+      <div class="nutrition">
+        <p><strong>Калорийность:</strong> 210 ккал</p>
+        <p><strong>Пищевая ценность на 100 г:</strong> Белки – 5 г, Жиры – 4 г, Углеводы – 35 г</p>
+      </div>
+      <p><strong>Ингредиенты:</strong></p>
+      <ul class="ingredient-list">
+        <li>1/2 стакана овсяных хлопьев</li>
+        <li>1 стакан молока или воды</li>
+        <li>1 банан</li>
+        <li>1 столовая ложка измельченных орехов (грецкие, миндаль)</li>
+        <li>1 столовая ложка меда</li>
+      </ul>
+
+      <p><strong>Способ приготовления:</strong></p>
+      <ol class="recipe-steps">
+        <li>Вскипятите молоко или воду.</li>
+        <li>Добавьте овсяные хлопья и варите 3-5 минут, помешивая.</li>
+        <li>Измельчите банан и добавьте его в овсянку.</li>
+        <li>Посыпьте орехами и добавьте мед по вкусу.</li>
+      </ol>
+      <a href="https://yandex.ru/video/preview/12916713746749812982?from=tabbar&parent-reqid=1745862835055367-18055952392796144988-balancer-l7leveler-kubr-yp-klg-325-BAL&text=овсянка+с+бананом+и+орехами" target="_blank" class="button">Смотреть видеоурок</a>
+    </div>
+  </div>
+
+  <!-- 5 -->
+  <div class="popup" id="popup5">
+    <div class="popup-content">
+      <span class="close" onclick="closePopup('popup5')">&times;</span>
+      <h3>Тост с авокадо и орехами</h3>
+      <div class="recipe-collage">
+        <img src="image/тост1.png" alt="Готовый тост" class="final-image">
+
+        <div class="collage-row">
+        <img src="image/тост2.png" alt="Шаг 1">
+        <img src="image/тост3.png" alt="Шаг 2">
+        <img src="image/тост4.png" alt="Шаг 3">
+      </div>
+
+      <div class="collage-row">
+        <img src="image/тост5.png" alt="Шаг 4">
+        <img src="image/тост6.png" alt="Шаг 5">
+        <img src="image/тост7.png" alt="Шаг 6">
+      </div>
+    </div>
+      <div class="nutrition">
+        <p><strong>Калорийность:</strong> 250 ккал</p>
+        <p><strong>Пищевая ценность на 100 г:</strong> Белки – 6 г, Жиры – 12 г, Углеводы – 28 г</p>
+      </div>
+      <p><strong>Ингредиенты:</strong></p>
+      <ul class="ingredient-list">
+        <li>2 ломтика хлеба</li>
+        <li>1 авокадо</li>
+        <li>2 яйца</li>
+        <li>Соль и перец по вкусу</li>
+        <li>1 столовая ложка оливкового масла</li>
+      </ul>
+
+      <p><strong>Способ приготовления:</strong></p>
+      <ol class="recipe-steps">
+        <li>Поджарьте ломтики хлеба до золотистой корочки.</li>
+        <li>Разрежьте авокадо пополам, удалите косточку, выньте мякоть и разомните ее вилкой. Посолите и поперчите.</li>
+        <li>Намажьте пюре из авокадо на тосты.</li>
+        <li>Обжарьте яйца на оливковом масле до желаемой степени готовности, посолите и поперчите.</li>
+        <li>Положите яйца на тосты с авокадо и подавайте.</li>
+      </ol>
+      <a href="https://yandex.ru/video/preview/10482082680375612865?suggest_reqid=673400698170352478341004097678636&text=Тост+с+авокадо+и+яйцом" target="_blank" class="button">Смотреть видеоурок</a>
+    </div>
+  </div>
+
+  <footer id="footer" class="footer">
+  <div class="footer-content">
+    <p>© Utrokus – Завтраки, которые вдохновляют</p>
+
+    <div class="footer-bottom">
+      <div class="footer-social">
+        <p><strong>Контакты:</strong></p>
+
+        <a href="mailto:ayuna2006@bk.ru">
+          <img src="image/почта.png" alt="Email" title="ayuna2006@bk.ru">
+          ayuna2006@bk.ru
+        </a><br>
+
+        <a href="https://t.me/Ayannochka" target="_blank">
+          <img src="image/тг.png" alt="Telegram" title="@Ayannochka">
+          @Ayannochka
+        </a><br>
+
+        <a href="https://vk.com/id454436141" target="_blank">
+          <img src="image/вк.png" alt="VK" title="VK">
+          ВКонтакте
+        </a><br>
+
+        <a href="tel:+79962806950">
+          <img src="image/телефон.png" alt="Телефон" title="+7(996)280-69-50">
+          +7 (996) 280-69-50
+        </a>
+      </div>
+
+      <div class="footer-address-map">
+        <p class="address">
+          📍 г. Москва, ул. Примерная, д. 1, офис 101
+        </p>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2244.2840321265235!2d37.61842301582788!3d55.75124498055398!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54a5b749d07d7%3A0x3dfd171c000a5870!2z0JzQvtGB0LrQstCw0Y8g0JzQsNC60YPQu9C40YbQsA!5e0!3m2!1sru!2sru!4v1717580000000"
+          width="325"
+          height="150"
+          style="border:0; border-radius: 10px; margin-top: 0.5rem;"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="scripts.js"></script>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const allStars = document.querySelectorAll('.stars');
+
+    allStars.forEach(starBlock => {
+      const id = starBlock.getAttribute('data-id');
+      const savedRating = localStorage.getItem('rating-' + id) || 0;
+
+      renderStars(starBlock, savedRating);
+
+      starBlock.addEventListener('click', function (e) {
+        if (e.target.tagName === 'SPAN') {
+          const value = e.target.dataset.value;
+          localStorage.setItem('rating-' + id, value);
+          renderStars(starBlock, value);
+        }
+      });
+    });
+
+    function renderStars(starBlock, value) {
+      starBlock.innerHTML = '';
+      for (let i = 1; i <= 5; i++) {
+        const star = document.createElement('span');
+        star.textContent = '★';
+        star.dataset.value = i;
+        if (i <= value) {
+          star.classList.add('active');
+        }
+        starBlock.appendChild(star);
+      }
+    }
+  });
+</script>
+</script>
+</body>
+</html>
